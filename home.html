@@ -12,117 +12,23 @@
   </head>
   <body>
     <div class="container-fluid px-0">
-      <!-- START LOGO AND SEARCH -->
-
-      <div
-        class="container-sm px-0 justify-content-center align-items-center d-flex flex-column"
-      >
-        <div
-          class="background"
-          style="background-image: url(assets/img/Rectangle\ 40.png)"
-        >
-          <nav class="navbar">
-            <div class="container-fluid test ms-4">
-              <a class="navbar-brand" href="#">
-                <img
-                  src="assets/img/logo lapaQ.svg"
-                  alt="Logo"
-                  width="55"
-                  height="40"
-                  class="d-inline-block align-text-top"
-                />
-              </a>
-              <div class="input-group input ms-3">
-                <span class="input-group-text" id="basic-addon1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-search"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                    />
-                  </svg>
-                </span>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Username"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-          </nav>
-          <!-- END LOGO AND SEARCH -->
-
-          <!-- START NAVIGASI ICON -->
-
-          <div class="contaner-fluid py-4 wrap-logo">
-            <div
-              class="d-flex gap-4 justify-content-center align-items-center text-center"
-            >
-              <div>
-                <img
-                  src="assets/img/Group 144.svg"
-                  alt=""
-                  width="40"
-                  height="40"
-                />
-                <p class="mt-1 p-icon">TRANSAKSI</p>
-              </div>
-              <div>
-                <img
-                  src="assets/img/Group 145.svg"
-                  alt=""
-                  width="40"
-                  height="40"
-                />
-                <p class="mt-1 p-icon">KERANJANG</p>
-              </div>
-              <div>
-                <img
-                  src="assets/img/Group 145 (1).svg"
-                  alt=""
-                  width="40"
-                  height="40"
-                />
-                <p class="mt-1 p-icon">PESANAN</p>
-              </div>
-            </div>
-          </div>
+      <div class="container-md px-0 bg py-3" style="background-image: url(assets/img/Rectangle\ 40.png);">
+      <!-- START SEARCH AND LOGO -->
+      <nav class="navbar d-flex nav">
+        <div>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo lapaQ.svg" alt="Bootstrap" width="40" height="40">
+          </a>
         </div>
-        <!-- END NAVIGASI ICON -->
-
-        <!-- START HERO BANNER -->
-
-        <div class="container-fluid px-0">
-          <div
-            class="d-flex wrap-banner justify-content-center align-items-center"
-          >
-            <div class="ps-3 py-3">
-              <img src="assets/img/Vector (1).svg" alt="" width="180px" />
-              <img
-                class="img"
-                src="assets/img/human.png"
-                alt=""
-                width="164px"
-              />
-            </div>
-            <div class="text-white text-center px-2 py-3">
-              <p>
-                "kita jalin kerjasama untuk memperkenalkan produk serta bangga
-                terhadap produk lokal"
-              </p>
-              <button type="button" class="btn btn-danger border border-white">
-                Daftar sekarang
-              </button>
-            </div>
+        <div class="wrapper-input">
+        <form class="container-fluid">
+          <div class="input-group wrap-input">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" width="70%">
           </div>
-        </div>
+        </form>
+      </div>
+      </nav>
       </div>
     </div>
     <script src="assets/plugin/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
