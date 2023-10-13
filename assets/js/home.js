@@ -1,4 +1,6 @@
 function displayProductsByCategory(category, containerId) {
+  let loading = document.getElementById("loading")
+  loading.style.display= "block"
   fetch("https://6524d82aea560a22a4ea298b.mockapi.io/product")
     .then((res) => res.json())
     .then((items) => {
@@ -36,9 +38,20 @@ function displayProductsByCategory(category, containerId) {
           containerList.appendChild(card);
         }
       });
-    });
+    }).catch((err)=>{
+      throw err
+    }).finally(()=>{
+      loading.style.display="none"
+    })
 }
 
 displayProductsByCategory("elektronik", "list-products");
 displayProductsByCategory("kecantikan", "list-kecantikan");
 displayProductsByCategory("fashion", "list-pakaian");
+
+
+let search = document.getElementById("search")
+
+search.addEventListener("click", () =>{
+  window.location.href = 'search.html';
+})

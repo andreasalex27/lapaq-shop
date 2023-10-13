@@ -39,7 +39,7 @@ body {
 .imgA {
     position: absolute;
     left: 0;
-    top: -89px;
+    top: -50px;
 }
 
 .imgB {
@@ -56,4 +56,16 @@ body {
 .motivasi p {
     padding-top: 4px;
     line-height: 1;
+}
+
+.nav-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 390px;
 }
