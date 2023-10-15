@@ -30,6 +30,9 @@ body {
     padding-top: 5px;
     margin-bottom: 5px;
 }
+.container .search-input .navbar .form-search .search button {
+    border: 1px solid #D0D0D0;
+}
 .container .info-product .img-product img{
     width: 100%;
     border-radius: 20px;
@@ -74,6 +77,12 @@ body {
     color: #FFF;
     margin-left: 29px;
     margin-right: 29px;
+}
+.container .info-product .btn-checkout button:hover {
+
+    background-color:#EA906C;
+    color: #FFF;
+
 }
 .container .review-product .title-review h1 {
     font-size: 20px;
