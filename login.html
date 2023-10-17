@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet" />
     <script src="./assets/js/js.js"></script>
     <title>Lapaq - Homepage</title>
-</head>
-<body>
-    <h1>LapaQ</h1>
-</body>
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/img/lapaq-logo.png" alt="" />
+        </div>
+        <div class="form-login">
+          <h3 id="login">Log In</h3>
+          <form action="/login" method="post">
+            <div class="username">
+              <span class="material-symbols-outlined"> person </span>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+                required />
+            </div>
+            <div class="password">
+              <span class="material-symbols-outlined"> lock </span>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required />
+            </div>
+            <div class="cta">
+              <div class="cta-ingat-saya">
+                <input type="checkbox" id="cb-ingat-saya" name="ingatSaya" />
+                <label for="ingatSaya">Ingat Saya:</label>
+              </div>
+              <button type="button" id="lupa-sandi">
+                <a href="lupa-sandi">Lupa Sandi</a>
+              </button>
+            </div>
+            <button type="submit" id="btn-login">LOG IN</button>
+          </form>
+        </div>
+        <div class="saran">
+          <span>Belum punya akun? <a>Daftar</a></span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
