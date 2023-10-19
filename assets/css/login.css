@@ -8,9 +8,11 @@
 body {
     box-sizing: border-box;
     font-family: 'montserrat', sans-serif;
+    background-color: rgb(244, 244, 244);
 }
 
 .container {
+    background: white;
     width: 390px;
     height: 100vh;
     margin: auto;
