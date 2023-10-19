@@ -7,6 +7,10 @@ body {
 .utama{
     background-color: rgb(237, 237, 237);
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .cnt {
     /* width: 390px; */
     margin: auto;
