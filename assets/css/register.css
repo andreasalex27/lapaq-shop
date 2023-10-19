@@ -140,8 +140,7 @@ body {
   width: 128px;
   height: auto;
 }
-.input-nama-depan {
-}
+
 #submit {
   width: 80%;
   padding: 3%;
@@ -150,6 +149,7 @@ body {
   background: #b31312;
   color: white;
   margin-top: 12px;
+  cursor: pointer;
 }
 .saran {
   height: auto;

@@ -64,10 +64,11 @@ body {
 }
 .form-login #login {
     width: 100%;
-    padding-left: 20%;
+    padding-left: 10%;
     text-align: start;
     color: #B31312;
     font-size: 25px;
+    font-weight: bold;
 }
 .cta {
     margin-top: 5%;
