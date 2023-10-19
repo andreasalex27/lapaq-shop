@@ -49,6 +49,7 @@
               role="switch"
               id="flexSwitchCheckChecked"
               checked
+              disabled
             />
             <label
               class="form-check-label"
@@ -63,14 +64,14 @@
           class="d-flex justify-content-between align-items-center container-md mt-2 p-0 text-secondary"
         >
           <div><p>1 Item</p></div>
-          <div><p>Rp. 150.000</p></div>
+          <div id="harga-item"><p>Rp. 150.000</p></div>
         </div>
         <hr class="m-1" />
         <div
           class="d-flex justify-content-between align-items-center container-md m-0 p-0 text-secondary"
         >
           <div><p class="fw-bolder text-black mb-5">Total Harga</p></div>
-          <div><p class="text-black mb-5">Rp. 170.000</p></div>
+          <div id="total"></div>
         </div>
         <div
           style="width: 100%; height: 4px; background-color: rgb(169, 169, 169)"
@@ -144,6 +145,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/payment.js"></script>
   </body>
 </html>
