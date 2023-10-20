@@ -20,7 +20,7 @@ form.addEventListener("submit", function (event) {
                 // Jika data cocok, tampilkan pesan "Berhasil login"
                 alert("Berhasil login");
                 // Alihkan pengguna ke halaman homepage (gantilah "homepage.html" dengan URL yang sesuai)
-                window.location.href = "homepage.html"; 
+                window.location.href = "/home.html"; 
             } else {
                 alert("Username atau password salah. Coba lagi.");
             }
