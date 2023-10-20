@@ -20,6 +20,11 @@ search.addEventListener("click", () =>{
   window.location.href = 'search.html';
 })
 
+// Fungsi untuk mengarahkan ke halaman payment.html dengan ID yang sesuai
+function redirectToPaymentPage() {
+    window.location.href = `payment.html?id=${productId}`;
+}
+
 // Mengambil data produk berdasarkan ID dari API
 fetch(`https://6524d82aea560a22a4ea298b.mockapi.io/product/${productId}`)
     .then(response => response.json())
@@ -38,6 +43,10 @@ fetch(`https://6524d82aea560a22a4ea298b.mockapi.io/product/${productId}`)
 
         const productDesc = document.getElementById('desc-product');
         productDesc.innerHTML = `<p>${product.deskripsi}</p>`;
+
+        const paymentButton = document.getElementById('btn-checkout');
+        paymentButton.innerHTML = `<button class="btn btn-danger" type="button">Checkout</button>`;
+        paymentButton.addEventListener('click', redirectToPaymentPage);
     
     })
     .catch(error => console.error('Error:', error));

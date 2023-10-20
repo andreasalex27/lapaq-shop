@@ -73,16 +73,9 @@ body {
 }
 .container .info-product .btn-checkout button {
     font-size: 14px;
-    background-color: #B31312;
     color: #FFF;
     margin-left: 29px;
     margin-right: 29px;
-}
-.container .info-product .btn-checkout button:hover {
-
-    background-color:#EA906C;
-    color: #FFF;
-
 }
 .container .review-product .title-review h1 {
     font-size: 20px;
