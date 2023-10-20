@@ -5,20 +5,32 @@ form.addEventListener("submit", function (event) {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    fetch('https://65312a1a4d4c2e3f333c8652.mockapi.io/form-regis/form-data', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
-    })
-    .then(response => {
-        if (response.status === 200) {
-            console.log("Login berhasil!");
-        } else {
-            console.log("Username atau password salah. Coba lagi.");
-        }
-    });
+    if (!username || !password) {
+        alert("Harap isi username, password, dan centang kotak persetujuan.");
+        return;
+    }
+
+    fetch('https://65312a1a4d4c2e3f333c8652.mockapi.io/form-regis/form-data')
+        .then(response => response.json())
+        .then(data => {
+            // Temukan pengguna dengan username dan password yang cocok
+            const user = data.find(user => user.email === username && user.password === password);
+
+            if (user) {
+                // Jika data cocok, tampilkan pesan "Berhasil login"
+                alert("Berhasil login");
+                // Alihkan pengguna ke halaman homepage (gantilah "homepage.html" dengan URL yang sesuai)
+                window.location.href = "homepage.html"; 
+            } else {
+                alert("Username atau password salah. Coba lagi.");
+            }
+        })
+        .catch(error => {
+            console.error("Terjadi kesalahan:", error);
+        });
+        
+//ADD END
+
 });
 
 // ini validasinya belum berfungsi

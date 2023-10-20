@@ -129,7 +129,7 @@ body {
   /* background-color: #0093ED; */
 }
 .logo {
-  height: 35%;
+  height: 25%;
   padding: 6px;
   width: 100%;
   display: flex;
@@ -151,6 +151,9 @@ body {
   margin-top: 12px;
   cursor: pointer;
 }
+#submit:hover {
+  background-color: #890606;
+}
 .saran {
   height: auto;
   margin-top: 10%;
@@ -168,4 +171,5 @@ body {
 }
 .saran span a {
   color: #0093ed;
+  text-decoration: none;
 }
