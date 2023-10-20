@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Intan Nur Fathonah" />
   <meta name="description" content="Official website e-commerce LapaQ" />
-  <link rel="icon" href="./assets/images/LapaQ - logo - svg.svg" type="image/x-icon"/>
+  <link rel="icon" href="./assets/img/LapaQ - logo - svg.svg" type="image/x-icon"/>
   <link rel="stylesheet" href="./assets/plugin/bootstrap-5.3.2-dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="./assets/plugin/bootstrap-5.3.2-dist/css/bootstrap.css"/>    
     <link rel="stylesheet" href="./assets/css/catalog.css">
@@ -17,9 +17,33 @@
       <section class="form-search search-input">
           <nav class="navbar">
               <div class="container-fluid form-search">
-                <form class="d-flex search" role="search">
-                  <input class="form-control me-2 " type="search" placeholder="Input text here" aria-label="Search">
-                  <button class="btn" type="submit">Search</button>
+                <form class="container-fluid">
+                  <div class="input-group wrap-input">
+                    <span class="input-group-text" id="basic-addon1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-search"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                        />
+                      </svg>
+                    </span>
+                    <input
+                      name="search"
+                      type="text"
+                      class="form-control"
+                      placeholder="Search"
+                      aria-label="Search"
+                      id="search"
+                      aria-describedby="basic-addon1"
+                      style="width: 70%"
+                    />
+                  </div>
                 </form>
               </div>
             </nav>
@@ -36,9 +60,7 @@
         <div class="desc-product" id="desc-product">
           <h2>Deskripsi</h2>
         </div>
-        <div class="d-grid gap-2 btn-checkout">
-          <button class="btn" type="button">Checkout</button>
-        </div>
+        <div class="d-grid gap-2 btn-checkout" id="btn-checkout"></div>
       </section>  
       <hr class="hr_1">
       <section class="review-product">
@@ -50,18 +72,18 @@
         </div>
         <div class="desc-review">
           <div class="user-avatar">
-            <img src="./assets/images/LapaQ - Profil chat_1.jpg"/>
+            <img src="./assets/img/LapaQ - Profil chat_1.jpg"/>
           </div>
           <div class="user-review">
             <div class="username"><h2>Asep Suseno</h2></div>
             <div class="date"><h3>2023-03-27</h3></div>
             <div class="text"><p>Mantap barangnya lembut, hangat dan harganya friendly auto checkout deui sikat barudak!!</p></div>
             <div class="stars">
-              <img src="./assets/images/LapaQ - Star.jpg"/>
-              <img src="./assets/images/LapaQ - Star.jpg"/>
-              <img src="./assets/images/LapaQ - Star.jpg"/>
-              <img src="./assets/images/LapaQ - Star.jpg"/>
-              <img src="./assets/images/LapaQ - Star.jpg"/>
+              <img src="./assets/img/LapaQ - Star.jpg"/>
+              <img src="./assets/img/LapaQ - Star.jpg"/>
+              <img src="./assets/img/LapaQ - Star.jpg"/>
+              <img src="./assets/img/LapaQ - Star.jpg"/>
+              <img src="./assets/img/LapaQ - Star.jpg"/>
             </div>
           </div>
         </div>
@@ -70,16 +92,16 @@
       <section class="footer">
         <section class="d-flex justify-content-evenly menu-bar">
           <div class="icon-menu">
-            <a href="#"><img src="./assets/images/LapaQ - Icon_1.jpg"/></a>
+            <a href="#"><img src="./assets/img/LapaQ - Icon_1.jpg"/></a>
           </div>
           <div class="icon-menu">
-            <a href="#"><img src="./assets/images/LapaQ - icon_2.jpg"/></a>
+            <a href="#"><img src="./assets/img/LapaQ - icon_2.jpg"/></a>
           </div>
           <div class="icon-menu">
-            <a href="#"><img src="./assets/images/LapaQ - icon_3.jpg"/></a>
+            <a href="#"><img src="./assets/img/LapaQ - icon_3.jpg"/></a>
           </div>
           <div class="icon-menu">
-            <a href="#"><img src="./assets/images/LapaQ - icon_4.jpg"/></a>
+            <a href="#"><img src="./assets/img/LapaQ - icon_4.jpg"/></a>
           </div>
         </section>
       </section>
