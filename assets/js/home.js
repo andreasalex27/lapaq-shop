@@ -12,7 +12,7 @@ function displayProductsByCategory(category, containerId) {
           card.className = "card col-md-6 p-0";
           card.style.width = "48%";
           card.innerHTML = `
-          <a href="./catalog.html?id${item.id}">
+          <a href="./catalog.html?id=${item.id}">
             <img src="${item.img}" class="card-img-top" alt="..." width="100%"/>
             <div class="card-body">
               <h5 style="font-size: 14px" class="card-title fw-semibold">${item.product}</h5>

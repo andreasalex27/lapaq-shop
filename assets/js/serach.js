@@ -1,5 +1,5 @@
 document.getElementById("search").addEventListener("input", function () {
-  const searchTerm = this.value; // Mengambil nilai input dari pengguna
+  const searchTerm = this.value.toLowerCase(); // Mengambil nilai input dari pengguna
 
   // Fungsi untuk mengambil dan menampilkan data dari API sesuai dengan input
   function fetchAndDisplayData(searchTerm) {
@@ -19,7 +19,7 @@ document.getElementById("search").addEventListener("input", function () {
         listProduct.innerHTML = ""; // Mengosongkan elemen sebelum menambahkan item baru
 
         const filteredItems = items.filter((item) =>
-          item.product.includes(searchTerm)
+          item.product.toLowerCase().includes(searchTerm)
         );
 
         if (filteredItems.length === 0) {
@@ -36,7 +36,7 @@ document.getElementById("search").addEventListener("input", function () {
             card.className = "card col-md-6 p-0";
             card.style.width = "48%";
             card.innerHTML = `
-            <a href="./catalog.html?id${item.id}">
+            <a href="./catalog.html?id=${item.id}">
               <img src="${item.img}" class="card-img-top" alt="..." width="100%"/>
               <div class="card-body">
                 <h5 style="font-size: 14px" class="card-title fw-semibold">${item.product}</h5>
