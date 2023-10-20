@@ -26,8 +26,8 @@ document.getElementById("search").addEventListener("input", function () {
           // Tampilkan pesan jika hasil pencarian tidak ditemukan
           const notFoundMessage = document.createElement("span");
           notFoundMessage.textContent = "Hasil tidak ditemukan";
-          notFoundMessage.style.textAlign = "center"
-          notFoundMessage.style.color = "red"
+          notFoundMessage.style.textAlign = "center";
+          notFoundMessage.style.color = "red";
           listProduct.appendChild(notFoundMessage);
         } else {
           // Tampilkan item-item yang sesuai dengan hasil pencarian
@@ -36,6 +36,7 @@ document.getElementById("search").addEventListener("input", function () {
             card.className = "card col-md-6 p-0";
             card.style.width = "48%";
             card.innerHTML = `
+            <a href="./catalog.html?id${item.id}">
               <img src="${item.img}" class="card-img-top" alt="..." width="100%"/>
               <div class="card-body">
                 <h5 style="font-size: 14px" class="card-title fw-semibold">${item.product}</h5>
@@ -58,6 +59,7 @@ document.getElementById("search").addEventListener("input", function () {
                   </div>
                 </div>
               </div>
+              </a>
             `;
             listProduct.appendChild(card);
           });
@@ -65,7 +67,7 @@ document.getElementById("search").addEventListener("input", function () {
       })
       .catch((error) => {
         console.error(error);
-      })
+      });
   }
 
   // Panggil fungsi fetchAndDisplayData dengan nilai input sebagai parameter
