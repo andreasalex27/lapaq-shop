@@ -1,5 +1,5 @@
 document.getElementById("search").addEventListener("input", function () {
-  const searchTerm = this.value; // Mengambil nilai input dari pengguna
+  const searchTerm = this.value.toLowerCase(); // Mengambil nilai input dari pengguna
 
   // Fungsi untuk mengambil dan menampilkan data dari API sesuai dengan input
   function fetchAndDisplayData(searchTerm) {
@@ -19,7 +19,7 @@ document.getElementById("search").addEventListener("input", function () {
         listProduct.innerHTML = ""; // Mengosongkan elemen sebelum menambahkan item baru
 
         const filteredItems = items.filter((item) =>
-          item.product.includes(searchTerm)
+          item.product.toLowerCase().includes(searchTerm)
         );
 
         if (filteredItems.length === 0) {
