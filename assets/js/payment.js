@@ -17,7 +17,7 @@ prosesButton.addEventListener("click", function () {
         timer: 2000,
       });
       setTimeout(() => {
-        window.location.href = "halaman-lain.html";
+        window.location.href = "home.html";
       }, 3000);
     }
   });
