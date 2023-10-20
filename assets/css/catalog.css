@@ -3,7 +3,7 @@
 body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    background-color: #EA906C;
+    background-color: rgb(244, 244, 244);
 }
 .container {
     margin: auto;
