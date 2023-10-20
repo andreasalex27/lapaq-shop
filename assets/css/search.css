@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.utama{
+    height: 100vh;
+    background-color: rgb(237, 237, 237);
+}
+.cnt {
+    height: 100vh;
+    background-color: white;
+}
+
+.nav-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
